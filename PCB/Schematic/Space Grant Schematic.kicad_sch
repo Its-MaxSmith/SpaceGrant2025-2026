@@ -2197,7 +2197,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Module:RaspberryPi_Pico")
-		(at 63.5 144.78 0)
+		(at 53.34 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2206,7 +2206,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fe2da96-4846-4f3f-aa54-df513dc8f62c")
 		(property "Reference" "A1"
-			(at 65.6433 179.07 0)
+			(at 55.4833 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2215,7 +2215,7 @@
 			)
 		)
 		(property "Value" "RaspberryPi_Pico"
-			(at 65.6433 181.61 0)
+			(at 55.4833 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2224,7 +2224,7 @@
 			)
 		)
 		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 63.5 191.77 0)
+			(at 53.34 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2233,7 +2233,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
-			(at 63.5 194.31 0)
+			(at 53.34 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2242,7 +2242,7 @@
 			)
 		)
 		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
-			(at 63.5 196.85 0)
+			(at 53.34 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2381,7 +2381,7 @@
 	)
 	(symbol
 		(lib_id "Driver_Motor:L298N")
-		(at 198.12 44.45 0)
+		(at 196.85 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2390,7 +2390,7 @@
 		(fields_autoplaced yes)
 		(uuid "64677acc-8e14-4e67-bb61-6116d097871d")
 		(property "Reference" "U2"
-			(at 202.8033 24.13 0)
+			(at 201.5333 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,7 +2399,7 @@
 			)
 		)
 		(property "Value" "L298N"
-			(at 202.8033 26.67 0)
+			(at 201.5333 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,7 +2408,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
-			(at 199.39 60.96 0)
+			(at 198.12 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,7 +2418,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf"
-			(at 201.93 38.1 0)
+			(at 200.66 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2427,7 +2427,7 @@
 			)
 		)
 		(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
-			(at 198.12 44.45 0)
+			(at 196.85 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2491,7 +2491,7 @@
 	)
 	(symbol
 		(lib_id "Driver_Motor:L298N")
-		(at 247.65 45.72 0)
+		(at 237.49 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2500,7 +2500,7 @@
 		(fields_autoplaced yes)
 		(uuid "9cbdce2e-d0fb-4735-af1a-e3e671e3600a")
 		(property "Reference" "U1"
-			(at 252.3333 25.4 0)
+			(at 242.1733 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,7 +2509,7 @@
 			)
 		)
 		(property "Value" "L298N"
-			(at 252.3333 27.94 0)
+			(at 242.1733 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2518,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-15_P2.54x5.08mm_StaggerOdd_Lead4.58mm_Vertical"
-			(at 248.92 62.23 0)
+			(at 238.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2528,7 +2528,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf"
-			(at 251.46 39.37 0)
+			(at 241.3 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2537,7 +2537,7 @@
 			)
 		)
 		(property "Description" "Dual full bridge motor driver, up to 46V, 4A, Multiwatt15-V"
-			(at 247.65 45.72 0)
+			(at 237.49 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
