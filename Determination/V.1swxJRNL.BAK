@@ -11,7 +11,7 @@ Sub main()
 
 Set swApp = Application.SldWorks
 
-swApp.ActivateDoc2 "4mm_pin_end_upper", False, longstatus
+swApp.ActivateDoc2 "4mm_pin_end - Copy", False, longstatus
 Set Part = swApp.ActiveDoc
 Set Part = swApp.ActiveDoc
 Dim myModelView As Object
@@ -25,12 +25,23 @@ myModelView.FrameState = swWindowState_e.swWindowMaximized
 boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
 Part.ClearSelection2 True
 Part.SelectionManager.EnableContourSelection = False
-' MSGBOX
-' Save changes to 4mm_pin_end_upper?
+boolstatus = Part.Extension.SelectByID2("Cut-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.SelectionManager.EnableContourSelection = False
+boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.SelectionManager.EnableContourSelection = False
 
-' MSGBOX
-' Save changes to 4mm_pin_end_upper?
+' Save
+Dim swErrors As Long
+Dim swWarnings As Long
+boolstatus = Part.Save3(1, swErrors, swWarnings)
 
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ender\OneDrive\Documents\GitHub\SpaceGrant2025-2026\Determination\V.1\4mm_pin_end_upper.SLDPRT", 0, 0)
+
+' Save
+boolstatus = Part.Save3(1, swErrors, swWarnings)
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
 Part.ClearSelection2 True
