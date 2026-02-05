@@ -11,7 +11,7 @@ Sub main()
 
 Set swApp = Application.SldWorks
 
-swApp.ActivateDoc2 "4mm_pin_end - Copy", False, longstatus
+swApp.ActivateDoc2 "leg_medium_1", False, longstatus
 Set Part = swApp.ActiveDoc
 Set Part = swApp.ActiveDoc
 Dim myModelView As Object
@@ -22,28 +22,63 @@ Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
-Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
-boolstatus = Part.Extension.SelectByID2("Cut-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
-Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
-boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
-Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.01546252634188729699, 0.0345712379346999818, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.02577087723647883064, 0.0691424758693999636, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.03607922813107036081, 0.1152374597823332819, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.02319378951283094722, 0.1094755867932166171, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.01288543861823941532, 0.1267612057605666254, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.005154175447295766821, 0.07490434885851664226, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.1094755867932166171, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.00257708772364788341, 0.07490434885851664226, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.007731263170943648497, 0.0691424758693999636, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.005154175447295766821, 0.02304749195646665916, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.007731263170943648497, 0.0172856189673499909, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.005154175447295766821, 0.01152374597823332958, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.005154175447295766821, 0.01152374597823332958, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.007731263170943648497, 0.01152374597823332958, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.00257708772364788341, 0, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.005761872989116664789, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.005761872989116664789, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.00257708772364788341, 0, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.00257708772364788341, 0, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.00257708772364788341, 0, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.00257708772364788341, 0, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.005761872989116664789, 0.01499999999987267074, 0.06724604254198141007, 0.01488291844493971894
 
-' Save
-Dim swErrors As Long
-Dim swWarnings As Long
-boolstatus = Part.Save3(1, swErrors, swWarnings)
+' Roll View
+Dim swModelView As Object
+Set swModelView = Part.ActiveView
+swModelView.RollBy 0
 
 ' Save As
-longstatus = Part.SaveAs3("C:\Users\Ender\OneDrive\Documents\GitHub\SpaceGrant2025-2026\Determination\V.1\4mm_pin_end_upper.SLDPRT", 0, 0)
-
-' Save
-boolstatus = Part.Save3(1, swErrors, swWarnings)
+longstatus = Part.SaveAs3("C:\Users\Ender\OneDrive\Desktop\leg_medium_1.STEP", 0, 2)
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
 swApp.ExitApp
 End Sub
