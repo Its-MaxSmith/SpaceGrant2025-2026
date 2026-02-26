@@ -11,3 +11,29 @@ Sub main()
 
 Set swApp = Application.SldWorks
 
+swApp.ActivateDoc2 "connector_wide_lower", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.Extension.SelectByID2("Sketch2", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditSketch
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+boolstatus = Part.Extension.SelectByID2("Sketch4", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditSketch
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+' MSGBOX
+' Save changes to connector_wide_lower?
+
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ExitApp
+End Sub
