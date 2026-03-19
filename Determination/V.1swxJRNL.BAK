@@ -1,5 +1,5 @@
 ' ******************************************************************************
-' swxJRNL.swj - journal recorded on 02/04/26 by aida
+' swxJRNL.swj - journal recorded on 02/18/26 by aida
 ' *****************************************************************************
 Dim swApp As Object
 
@@ -11,7 +11,7 @@ Sub main()
 
 Set swApp = Application.SldWorks
 
-swApp.ActivateDoc2 "4mm_pin_end - Copy", False, longstatus
+swApp.ActivateDoc2 "connector_wide_lower", False, longstatus
 Set Part = swApp.ActiveDoc
 Set Part = swApp.ActiveDoc
 Dim myModelView As Object
@@ -22,28 +22,18 @@ Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Sketch2", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditSketch
 Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
-boolstatus = Part.Extension.SelectByID2("Cut-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.SketchManager.InsertSketch True
+boolstatus = Part.Extension.SelectByID2("Sketch4", "SKETCH", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditSketch
 Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
-boolstatus = Part.Extension.SelectByID2("Boss-Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
-Part.ClearSelection2 True
-Part.SelectionManager.EnableContourSelection = False
+Part.SketchManager.InsertSketch True
+' MSGBOX
+' Save changes to connector_wide_lower?
 
-' Save
-Dim swErrors As Long
-Dim swWarnings As Long
-boolstatus = Part.Save3(1, swErrors, swWarnings)
-
-' Save As
-longstatus = Part.SaveAs3("C:\Users\Ender\OneDrive\Documents\GitHub\SpaceGrant2025-2026\Determination\V.1\4mm_pin_end_upper.SLDPRT", 0, 0)
-
-' Save
-boolstatus = Part.Save3(1, swErrors, swWarnings)
 Set myModelView = Part.ActiveView
 myModelView.FrameState = swWindowState_e.swWindowMaximized
-Part.ClearSelection2 True
 swApp.ExitApp
 End Sub
